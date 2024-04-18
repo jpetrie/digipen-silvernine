@@ -1,0 +1,3 @@
+self:NewButton(0,0,"ui_armym",0,GetEventCode("noop"),"");
+self:NewButton(640,30,"ui_armym",1,GetEventCode("lvlb"),"");
+self:NewButton(15,30,"ui_shop",0,GetEventCode("ashp"),"");

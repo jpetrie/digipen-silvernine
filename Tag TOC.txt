@@ -1,0 +1,147 @@
+
+--------------------------------------------------------------------------------
+
+	This file contains information about which tags (and other items
+	found in the data/ directory) are final game assets. Anything not
+	listed here can safely be considered test data and (eventually)
+	thrown away.
+
+--------------------------------------------------------------------------------
+
+
+tags: **************************************************************************
+
+abilities (mental)/
+	*** DEPRECATED; SHOULD BE EMPTY ***
+
+abilities (physical)/
+	*** DEPRECATED; SHOULD BE EMPTY ***
+
+armies/
+	*** DEPRECATED; SHOULD BE EMPTY ***
+
+camera physics/
+	*** DEPRECATED; SHOULD BE EMPTY ***
+
+campaigns/
+	*** DEPRECATED; SHOULD BE EMPTY ***
+
+mechs/
+	mechscut	scout mech
+	mechgrnt	grunt mech
+	mechsnip	sniper mech
+	mechbmfu	bmf mech
+
+	sce_tre1	tree 1 scenery
+
+objects/
+	mechscut	scout mech object
+	mechgrnt	grunt mech object
+	mechsnip	sniper mech object
+	mechbmfu	bmf mech object
+
+	bullmini	bullet, minigun
+	* bullchan	bullet, chaingun
+	* bullrail	bullet, railgun
+	* bullsnpr	bullet, sniper rifle
+	* bullmiss	bullet, missile
+	* bullflam	bullet, flamethrower burst
+	* bullshok	bullet, shock pulse
+	* bullheal	bullet, heal pulse
+
+	objeammo	generic ammo object
+	
+	sce_tre1	tree 1 object
+
+
+preloaded data/
+	*** DEPRECATED; SHOULD BE EMPTY ***
+
+projectile groups/
+	* pgrpmini
+	* pgrpchan
+	* pgrprail
+	* pgrpsnpr
+	* pgrpmiss
+	* pgrpmswm
+	* pgrpflam
+	* pgrpshok
+	* pgrpheal
+
+projectiles/
+	* projmini
+	* projchan
+	* projrail
+	* projsnpr
+	* projmiss
+	* projflam
+	* projshok
+	* projheal
+	* ammomini
+	* ammochan
+	* ammorail
+	* ammosnpr
+	* ammomiss
+	* ammomswm
+	* ammoflam
+	* ammoshok
+	* ammoheal
+
+saved games/
+	*** DEPRECATED; SHOULD BE EMPTY ***
+
+scripts/
+	*** DEPRECATED; SHOULD BE EMPTY ***
+
+string collections/
+	
+sprite collections/
+	ui_mmenu	main menu ui sprites
+	ui_armym	army management ui sprites
+	* ui_gover	win/loss screen sprites
+
+	* sprcscut	scout unit sprites
+	* sprcgrnt	grunt unit sprites
+	* sprcsnip	sniper unit sprites
+	* sprcbmfu	bmf unit sprites
+
+	* attaflam	attack: flamethrower sprites
+	* attamiss	attack: missile sprites
+	* attashok	attack: shock sprites
+	* attaheal	attack: heal sprites
+
+	sprcbull	generic bullet sprites
+	* sprccont	generic contrail sprites
+	* sprcscen	generic scenery sprites
+
+	icons		weapon icon sprites
+	scens		scenery sprites
+	effes		weather effect sprites
+
+	maptiles	tile map sprites
+	barparts	scrollbar parts
+	lstparts	army management listbox sprites
+
+string collections/
+	*** DEPRECATED; SHOULD BE EMPTY ***
+
+texts/
+	*** DEPRECATED; SHOULD BE EMPTY ***
+
+tile maps/
+	s01		sp level 01
+	m01		mp level 01
+
+units/
+	e_carbmf	Caravan (camping) BMF.
+	e_cargrt	Caravan (camping) grunt.
+
+	pla_scut
+	pla_snip
+	pla_grnt
+	pla_bmfu
+
+	sce_tre1	
+
+weather effects/
+	*** DEPRECATED; SHOULD BE EMPTY ***

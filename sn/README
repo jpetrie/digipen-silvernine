@@ -1,0 +1,8 @@
+
+Build Notes
+-----------
+
+Perl Scripts
+  Silver Nine relies on a handful of Perl scripts to generate some of its code. Most of these scripts are
+  run as pre- or post-build steps; consequently you will not be able to compile the source unless you
+  have a Perl interpreter installed. We suggest ActivePerl, available from www.activestate.com.

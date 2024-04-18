@@ -1,0 +1,20 @@
+Mission 1: Destroy Weapons Caravan
+----------------------------------------------
+
+Units Allowed: 8
+
+Our scouts have reported sightings of a small caravan travelling 
+through our territory. The caravan is suspected to contain supplies 
+and weapons plans recently stolen from our North Point research 
+base.
+
+The enemy is believed to be lightly armed, but numerous. Our latest 
+report indicates a force of at least ten strong, piloting mechs of 
+Grunt-class or below.
+
+Since it has been more than three hours since our last scout reported 
+in, we are unable to confirm the exact location of the enemy force. 
+However, based on their last known heading, we expect them to be 
+somewhere to the northeast of your current location.
+
+Good luck.

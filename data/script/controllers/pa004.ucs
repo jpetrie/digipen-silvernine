@@ -1,0 +1,17 @@
+-- Controller for campsite patroller 000.
+--   Patrols between his waypoints.
+
+-- Set up response script (to attack enemy units)
+self:DefineSeeEnemyResponse("guard");
+
+local wp0 = GlobalMap():Waypoint("pa004a");
+local wp1 = GlobalMap():Waypoint("pa004b");
+
+if self:MovePathEmpty() == 1 then
+  if self:TestWithinRadius(wp0:X(),wp0:Y(),100,50) == 1 then
+    self:MovePathDest(wp1:X(),wp1:Y());
+  end
+  if self:TestWithinRadius(wp1:X(),wp1:Y(),100,50) == 1 then
+    self:MovePathDest(wp0:X(),wp0:Y());
+  end
+end

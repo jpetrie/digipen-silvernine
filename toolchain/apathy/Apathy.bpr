@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Apathy.exe"/>
+    <OBJFILES value="intermediates\Apathy.obj intermediates\ApathyMain.obj 
+      intermediates\ApathyNewTag.obj intermediates\ApathyNewPackage.obj 
+      intermediates\ApathyTagProps.obj intermediates\CEditor_tmap.obj 
+      intermediates\CEditorFactory.obj intermediates\CEditor_tmapResize.obj 
+      intermediates\CEditor_unit.obj intermediates\CEditor_sprc.obj 
+      intermediates\CEditor_sprcSCT.obj intermediates\CEditor_mech.obj 
+      intermediates\CEditor_proj.obj intermediates\CEditor_obje.obj 
+      intermediates\BMops.obj intermediates\CGraphicsMgrS.obj 
+      intermediates\CRect.obj intermediates\CSprite.obj 
+      intermediates\CTagFactory.obj intermediates\CTagMgrS.obj 
+      intermediates\CTagFactory_mech.obj intermediates\CTagFactory_obje.obj 
+      intermediates\CTagFactory_proj.obj intermediates\CTagFactory_sprc.obj 
+      intermediates\CTagFactory_tmap.obj intermediates\CTagFactory_unit.obj 
+      intermediates\nsl_bitmap.obj intermediates\nsl_bstream.obj 
+      intermediates\nsl_exception.obj intermediates\nsl_singleton.obj 
+      intermediates\nsl_tools_file.obj intermediates\nsl_tools_math.obj 
+      intermediates\nsl_tools_string.obj intermediates\nsl_assert.obj 
+      intermediates\CTag.obj intermediates\CTexture.obj 
+      intermediates\CConfigMgrS.obj intermediates\CTagFactory_strc.obj 
+      intermediates\CEditor_strc.obj intermediates\CLine.obj 
+      intermediates\CEditor_pgrp.obj intermediates\CTagFactory_pgrp.obj"/>
+    <RESFILES value="Apathy.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) ApathyMain.dfm ApathyNewTag.dfm ApathyNewPackage.dfm 
+      ApathyTagProps.dfm CEditor_tmap.dfm CEditor_tmapResize.dfm 
+      CEditor_unit.dfm CEditor_sprc.dfm CEditor_sprcSCT.dfm CEditor_mech.dfm 
+      CEditor_proj.dfm CEditor_obje.dfm CEditor_strc.dfm CEditor_pgrp.dfm"/>
+    <LIBFILES value="&quot;C:\Program Files\Borland\CBuilder6\Lib\glaux.lib&quot;"/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value="vcl.lib rtl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi bcbie.bpi soaprtl.bpi 
+      dclocx.bpi dbexpress.bpi dbxcds.bpi indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;..\..\sn;..\..\sn;..\..\sn;..\..\sn;..\..\sn;..\..\sn;..\..\sn;..\..\sn;..\..\sn;..\..\sn;..\..\sn;..\..\nsl;..\..\nsl;..\..\nsl;..\..\nsl;..\..\nsl;..\..\nsl;..\..\nsl;..\..\nsl;..\..\sn;..\..\sn;..\..\sn;..\..\sn;..\..\sn;..\..\sn"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="Apathy.cpp"/>
+    <INCLUDEPATH value="..\..\client;..\..\common;..\..\nsl;..\..\sn;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="$(BCB)\Lib;$(BCB)\Lib\Obj;..\..\client;..\..\common;..\..\nsl;..\..\sn;$(BCB)\include;$(BCB)\include\vcl"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\..\client -I..\..\common -I..\..\nsl -I..\..\sn -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-N2intermediates -N0intermediates -$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-Iintermediates -D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Apathy.res" FORMNAME="" UNITNAME="Apathy.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Apathy.cpp" FORMNAME="" UNITNAME="Apathy" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ApathyMain.cpp" FORMNAME="frmMain" UNITNAME="ApathyMain" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ApathyNewTag.cpp" FORMNAME="frmNewTag" UNITNAME="ApathyNewTag" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ApathyNewPackage.cpp" FORMNAME="frmNewPackage" UNITNAME="ApathyNewPackage" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ApathyTagProps.cpp" FORMNAME="frmTagProps" UNITNAME="ApathyTagProps" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CEditor_tmap.cpp" FORMNAME="frmTMAP" UNITNAME="CEditor_tmap" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CEditorFactory.cpp" FORMNAME="" UNITNAME="CEditorFactory" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CEditor_tmapResize.cpp" FORMNAME="frmTMAP_Resize" UNITNAME="CEditor_tmapResize" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CEditor_unit.cpp" FORMNAME="frmUNIT" UNITNAME="CEditor_unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CEditor_sprc.cpp" FORMNAME="frmSPRC" UNITNAME="CEditor_sprc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CEditor_sprcSCT.cpp" FORMNAME="frmSPRCCollectionTitle" UNITNAME="CEditor_sprcSCT" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CEditor_mech.cpp" FORMNAME="frmMECH" UNITNAME="CEditor_mech" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CEditor_proj.cpp" FORMNAME="frmPROJ" UNITNAME="CEditor_proj" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CEditor_obje.cpp" FORMNAME="frmOBJE" UNITNAME="CEditor_obje" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BMops.cpp" FORMNAME="" UNITNAME="BMops.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="C:\Program Files\Borland\CBuilder6\Lib\glaux.lib" FORMNAME="" UNITNAME="glaux.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CGraphicsMgrS.cpp" FORMNAME="" UNITNAME="CGraphicsMgrS.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CRect.cpp" FORMNAME="" UNITNAME="CRect.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CSprite.cpp" FORMNAME="" UNITNAME="CSprite.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CTagFactory.cpp" FORMNAME="" UNITNAME="CTagFactory.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CTagMgrS.cpp" FORMNAME="" UNITNAME="CTagMgrS.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CTagFactory_mech.cpp" FORMNAME="" UNITNAME="CTagFactory_mech.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CTagFactory_obje.cpp" FORMNAME="" UNITNAME="CTagFactory_obje.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CTagFactory_proj.cpp" FORMNAME="" UNITNAME="CTagFactory_proj.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CTagFactory_sprc.cpp" FORMNAME="" UNITNAME="CTagFactory_sprc.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CTagFactory_tmap.cpp" FORMNAME="" UNITNAME="CTagFactory_tmap.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CTagFactory_unit.cpp" FORMNAME="" UNITNAME="CTagFactory_unit.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\nsl\nsl_bitmap.cpp" FORMNAME="" UNITNAME="nsl_bitmap.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\nsl\nsl_bstream.cpp" FORMNAME="" UNITNAME="nsl_bstream.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\nsl\nsl_exception.cpp" FORMNAME="" UNITNAME="nsl_exception.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\nsl\nsl_singleton.cpp" FORMNAME="" UNITNAME="nsl_singleton.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\nsl\nsl_tools_file.cpp" FORMNAME="" UNITNAME="nsl_tools_file.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\nsl\nsl_tools_math.cpp" FORMNAME="" UNITNAME="nsl_tools_math.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\nsl\nsl_tools_string.cpp" FORMNAME="" UNITNAME="nsl_tools_string.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\nsl\nsl_assert.cpp" FORMNAME="" UNITNAME="nsl_assert.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CTag.cpp" FORMNAME="" UNITNAME="CTag.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CTexture.cpp" FORMNAME="" UNITNAME="CTexture.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CConfigMgrS.cpp" FORMNAME="" UNITNAME="CConfigMgrS" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CTagFactory_strc.cpp" FORMNAME="" UNITNAME="CTagFactory_strc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CEditor_strc.cpp" FORMNAME="frmSTRC" UNITNAME="CEditor_strc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CLine.cpp" FORMNAME="" UNITNAME="CLine" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CEditor_pgrp.cpp" FORMNAME="frmPGRP" UNITNAME="CEditor_pgrp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\sn\CTagFactory_pgrp.cpp" FORMNAME="" UNITNAME="CTagFactory_pgrp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+
+[HistoryLists\hlIncludePath]
+Count=5
+Item0=..\..\client;..\..\common;..\..\nsl;..\..\sn;$(BCB)\include;$(BCB)\include\vcl
+Item1=..\..\nsl;..\..\sn;$(BCB)\include;$(BCB)\include\vcl
+Item2=..\..\nsl;..\..\common;..\..\client;$(BCB)\include;$(BCB)\include\vcl
+Item3=..\..\nsl;..\..\common;..\..\client;C:\Program Files\Borland\CBuilder6\Projects;c:\Winnt\Profiles\ssmith\Desktop\Apathy;$(BCB)\include;$(BCB)\include\vcl
+Item4=..\..\client;C:\Program Files\Borland\CBuilder6\Projects;c:\Winnt\Profiles\ssmith\Desktop\Apathy;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=6
+Item0=$(BCB)\Lib;$(BCB)\Lib\Obj;..\..\client;..\..\common;..\..\nsl;..\..\sn;$(BCB)\include;$(BCB)\include\vcl
+Item1=$(BCB)\Lib;..\..\client;..\..\common;..\..\nsl;..\..\sn;$(BCB)\include;$(BCB)\include\vcl
+Item2=..\..\nsl;..\..\sn;$(BCB)\include;$(BCB)\include\vcl
+Item3=..\..\nsl;..\..\common;..\..\client;$(BCB)\lib\obj;$(BCB)\lib
+Item4=..\..\nsl;..\..\common;..\..\client;C:\Program Files\Borland\CBuilder6\Projects;c:\Winnt\Profiles\ssmith\Desktop\Apathy;$(BCB)\lib\obj;$(BCB)\lib
+Item5=..\..\client;C:\Program Files\Borland\CBuilder6\Projects;c:\Winnt\Profiles\ssmith\Desktop\Apathy;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=intermediates
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+  </IDEOPTIONS>
+</PROJECT>

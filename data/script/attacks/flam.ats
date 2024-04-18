@@ -1,0 +1,11 @@
+self:SetupEffectGroup("none");
+self:SetupProjectileGroup("pgrpsnip");
+self:SetupCost(-1);
+self:SetupSync(0.0);
+self:SetupClip(0);
+self:SetupMinDistance(100.0);
+self:SetupMaxDistance(400.0);
+self:SetupIcon(3);
+self:SetupLifetime(20);
+self:SetupAmmoTag("ammosnip");
+self:SetupDelay(30);

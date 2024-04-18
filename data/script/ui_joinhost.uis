@@ -1,0 +1,6 @@
+
+self:NewButton(50, 50,"ui_mmenu", 1, GetEventCode("spnt"), "Back");
+
+self:NewButton(300, 400, "ui_mmenu", 1, GetEventCode("hntg"), "Host Game");
+
+self:NewButton(400, 50, "ui_mmenu", 1, GetEventCode("jngm"), "Join Game");

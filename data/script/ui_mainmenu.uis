@@ -1,0 +1,6 @@
+self:NewButton(150,450,"ui_mmenu",0,GetEventCode("noop"),"");
+
+self:NewButtonColSize(275,250,"ui_mmenu",1,GetEventCode("stsp"),"",120,20,70,22);
+self:NewButtonColSize(275,150,"ui_mmenu",2,GetEventCode("stnt"),"",180,40,41,10);
+self:NewButtonColSize(275,50,"ui_mmenu",3,GetEventCode("quit"),"",80,50,90,10);
+

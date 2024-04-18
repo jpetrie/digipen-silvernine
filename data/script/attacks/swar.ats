@@ -1,0 +1,11 @@
+self:SetupEffectGroup("none");
+self:SetupProjectileGroup("pgrpmini");
+self:SetupCost(-1);
+self:SetupSync(0.0);
+self:SetupClip(0);
+self:SetupMinDistance(5.0);
+self:SetupMaxDistance(150.0);
+self:SetupIcon(2);
+self:SetupLifetime(20);
+self:SetupAmmoTag("ammomini");
+self:SetupDelay(30);

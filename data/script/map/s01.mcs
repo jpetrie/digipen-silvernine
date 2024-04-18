@@ -1,0 +1,26 @@
+
+-- If the player has no units left alive, they lose.
+local player_dead = true;
+  
+  for i = 0, self:SizeOfActiveTeam(0) - 1 do
+    if self:UnitOfActiveTeam(0,i):Dead() == 0 then
+      player_dead = false;
+    end
+  end
+  
+  if player_dead then
+    self:SetLevelComplete(1)
+  end
+  
+local cara_dead = true;
+  
+  for j = 0, self:SizeOfGroup("cara") - 1 do
+    if self:UnitOfGroup("cara",j):Dead() == 0 then
+      cara_dead = false;
+      print("unit",j,"dead is",self:UnitOfGroup("cara",j):Dead());
+    end
+  end
+  
+  if cara_dead then
+    self:SetLevelComplete(0)
+  end

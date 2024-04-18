@@ -1,0 +1,53 @@
+/*! =========================================================================
+      
+      @file    CTagFactory_%%CODE%%.h
+      @brief   '%%CODE%%' tag factory.
+      
+    ========================================================================= */
+
+/*                                                                      guard
+----------------------------------------------------------------------------- */
+
+#ifndef _C_TAGFACTORY_%%CODECAPPED%%_H_
+#define _C_TAGFACTORY_%%CODECAPPED%%_H_
+
+
+/*                                                                   includes
+----------------------------------------------------------------------------- */
+
+#include "precompiled.h"
+
+#include "CTagFactory.h"
+#include "CTag_%%CODE%%.h"
+
+
+/*                                                                    classes
+----------------------------------------------------------------------------- */
+
+/*  _________________________________________________________________________ */
+class CTagFactory_%%CODE%% : public CTagFactory
+/*! @brief %%CODE%% tag factory.
+*/
+{
+  public:
+    // ct and dt
+             CTagFactory_%%CODE%%(void) : CTagFactory(kTag_%%CODE%%,kTag_%%CODE%%_TypeStr,kTag_%%CODE%%_KindStr) { }
+    virtual ~CTagFactory_%%CODE%%(void)                          { }
+   
+   
+  protected:
+    // specific construction
+    virtual CTag* DoCreate(void) { return new CTag_%%CODE%%; };
+    
+    // specific archival
+    virtual void  DoUnarchive(CTag *tag,nsl::bstream &bytes);
+    virtual void  DoArchive(CTag *tag,nsl::bstream &bytes);
+    
+        
+  private:
+    // data members
+    static CTagFactory_%%CODE%%  smRegistrar;
+};
+
+
+#endif  /* _C_TAGFACTORY_%%CODECAPPED%%_H_ */

@@ -1,0 +1,53 @@
+/*! =========================================================================
+      
+      @file    CEventFactory_%%EVENT%%.cpp
+      @brief   Implementation of event factory.
+      
+    ========================================================================= */
+
+/*                                                                   includes
+----------------------------------------------------------------------------- */
+
+#include "precompiled.h"
+
+#include "CEventFactory_%%EVENT%%.h"
+#include "CEvent_%%EVENT%%.h"
+
+
+/*                                                             static members
+----------------------------------------------------------------------------- */
+
+CEventFactory_%%EVENT%% CEventFactory_%%EVENT%%::smRegistrar;
+
+
+/*                                                           function members
+----------------------------------------------------------------------------- */
+
+
+/*  _________________________________________________________________________ */
+CEventFactory_%%EVENT%%::CEventFactory_%%EVENT%%(void)
+: CEventFactory(kEvent_%%EVENT%%)
+/*! @brief Default constructor.
+*/
+{
+}
+
+
+/*  _________________________________________________________________________ */
+CEventFactory_%%EVENT%%::~CEventFactory_%%EVENT%%(void)
+/*! @brief Destructor.
+*/
+{
+}
+
+
+/*  _________________________________________________________________________ */
+CEvent* CEventFactory_%%EVENT%%::nConstruct(void)
+/*! @brief Construction method.
+
+    @return
+    A new event.
+*/
+{
+  return (new CEvent_%%EVENT%%);
+}

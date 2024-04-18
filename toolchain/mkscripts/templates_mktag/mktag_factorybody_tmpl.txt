@@ -1,0 +1,56 @@
+/*! =========================================================================
+      
+      @file    CTagFactory_%%CODE%%.cpp
+      @brief   '%%CODE%%' tag factory.
+      
+    ========================================================================= */
+
+/*                                                                   includes
+----------------------------------------------------------------------------- */
+
+#include "precompiled.h"
+
+#include "CTagFactory_%%CODE%%.h"
+
+
+/*                                                             static members
+----------------------------------------------------------------------------- */
+
+CTagFactory_%%CODE%%  CTagFactory_%%CODE%%::smRegistrar;
+
+
+/*                                                           member functions
+----------------------------------------------------------------------------- */
+
+/*  _________________________________________________________________________ */
+void CTagFactory_%%CODE%%::DoUnarchive(CTag *tag,nsl::bstream &bytes)
+/*! @brief Unarchives a tag from a stream of bytes.
+
+    @param tag    Pointer to the tag to unarchive into.
+    @param bytes  The bytestream containing the tag data.
+*/
+{
+CTag_%%CODE%%* tTag = dcast< CTag_%%CODE%%* >(tag);
+  
+  if(0 != tTag)
+  {
+    /* STREAM TAG DATA IN HERE */
+  }
+}
+
+
+/*  _________________________________________________________________________ */
+void CTagFactory_%%CODE%%::DoArchive(CTag *tag,nsl::bstream &bytes)
+/*! @brief Archives a tag to a stream of bytes.
+
+    @param tag    Pointer to the tag to archive from.
+    @param bytes  The bytestream to contain the tag data.
+*/
+{
+CTag_%%CODE%%* tTag = dcast< CTag_%%CODE%%* >(tag);
+  
+  if(0 != tTag)
+  {
+    /* STREAM TAG DATA OUT HERE */
+  }
+}

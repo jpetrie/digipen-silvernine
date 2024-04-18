@@ -1,0 +1,60 @@
+/*! =========================================================================
+      
+      @file    CTag_%%CODE%%.h
+      @brief   '%%CODE%%' tag (%%CODENAME%%)
+      
+    ========================================================================= */
+
+/*                                                                      guard
+----------------------------------------------------------------------------- */
+
+#ifndef _C_TAG_%%CODECAPPED%%_H_
+#define _C_TAG_%%CODECAPPED%%_H_
+
+
+/*                                                                   includes
+----------------------------------------------------------------------------- */
+
+#include "precompiled.h"
+
+#include "CTag.h"
+
+
+/*                                                                  constants
+----------------------------------------------------------------------------- */
+
+// tag id
+const CTag::ID  kTag_%%CODE%% = nlFOURCODE('%%A%%','%%B%%','%%C%%','%%D%%');
+
+// tag id strings
+const std::string  kTag_%%CODE%%_TypeStr = "%%CODE%%";
+const std::string  kTag_%%CODE%%_KindStr = "%%CODENAME%%";
+
+
+/*                                                                    classes
+----------------------------------------------------------------------------- */
+
+/*  _________________________________________________________________________ */
+class CTag_%%CODE%% : public CTag
+/*! @brief %%CODE%% tag (%%CODENAME%%).
+*/
+{
+  // contracts
+  nlCONTRACT_NOCOPY(CTag_%%CODE%%);
+
+
+  // friends
+  friend class CTagFactory_%%CODE%%;
+  
+
+  public:
+    // ct and dt
+     CTag_%%CODE%%(void) : CTag(kTag_%%CODE%%) { }
+    ~CTag_%%CODE%%(void)                   { }
+    
+    // properties
+    /* INSERT TAG PROPERTIES HERE */
+};
+
+
+#endif  /* _C_TAG_%%CODECAPPED%%_H_ */

@@ -1,0 +1,3 @@
+
+-- Set up response script (to attack enemy units)
+self:DefineSeeEnemyResponse("guard");

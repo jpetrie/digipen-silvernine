@@ -1,0 +1,7 @@
+DefinePlayerArmy();
+
+DefinePlayerUnit("pla_bmfu");
+DefinePlayerUnit("pla_grnt");
+DefinePlayerUnit("pla_grnt");
+DefinePlayerUnit("pla_snip");
+DefinePlayerUnit("pla_scut");

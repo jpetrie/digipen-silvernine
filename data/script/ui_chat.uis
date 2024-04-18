@@ -1,0 +1,2 @@
+
+self:NewButton(300, 50, "ui_mmenu",1, GetEventCode("stng"), "Start");

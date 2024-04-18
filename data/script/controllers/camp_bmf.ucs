@@ -1,0 +1,20 @@
+-- Controller for campsite BMF
+--   The BMF will attack any player unit that gets
+--   within a certain radius, but will not leave the
+--   campsite unless all the Grunts at the campsite
+--   are dead.
+
+-- Set up response script (to attack enemy units)
+self:DefineSeeEnemyResponse("camp_bmf");
+
+-- Get the camp waypoint.
+local wp = GlobalMap():Waypoint("campsite");
+
+if self:TestWithinRadius(wp:X(),wp:Y(),500,250) == 0 then
+  self:DefineSeeEnemyResponse("");
+  self:MovePathDest(wp:X(),wp:Y())
+end
+
+if self:Shields() < 5 then
+  GlobalMap():SetLevelComplete(0);
+end

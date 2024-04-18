@@ -1,0 +1,52 @@
+/*! =========================================================================
+      
+      @file    CEventFactory_%%EVENT%%.h
+      @brief   Interface to event factory.
+      
+    ========================================================================= */
+
+/*                                                                      guard
+----------------------------------------------------------------------------- */
+
+#ifndef _C_EVENTFACTORY_%%EVENTC%%_H_
+#define _C_EVENTFACTORY_%%EVENTC%%_H_
+
+
+/*                                                                   includes
+----------------------------------------------------------------------------- */
+
+
+#include "precompiled.h"
+
+#include "CEventFactory.h"
+
+
+/*                                                                    classes
+----------------------------------------------------------------------------- */
+
+/*  _________________________________________________________________________ */
+class CEventFactory_%%EVENT%% : public CEventFactory
+/*! @brief  Factory for level begin events.
+*/
+{ 
+  // stereotypes
+  nlCONTRACT_NOCOPY(CEventFactory_%%EVENT%%);
+
+  public:
+    // ct and dt
+	   CEventFactory_%%EVENT%%(void);
+	  ~CEventFactory_%%EVENT%%(void);
+	
+	
+	protected:
+	  // construction
+	  CEvent* nConstruct(void);
+         
+         
+  private:
+     // data members
+     static CEventFactory_%%EVENT%%  smRegistrar;
+};
+
+
+#endif  /* _C_EVENTFACTORY_%%EVENTC%%_H_ */

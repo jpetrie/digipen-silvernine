@@ -1,0 +1,1 @@
+echo "Nothing to be done for mkscripts."

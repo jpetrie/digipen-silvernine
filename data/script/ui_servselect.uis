@@ -1,0 +1,1 @@
+self:NewButton(400, 100, "ui_mmenu", 3, GetEventCode("quit"), "Quit");

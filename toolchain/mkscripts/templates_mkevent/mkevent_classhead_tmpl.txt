@@ -1,0 +1,53 @@
+/*! =========================================================================
+      
+      @file    CEvent_%%EVENT%%.h
+      @brief   
+      
+    ========================================================================= */
+
+/*                                                                      guard
+----------------------------------------------------------------------------- */
+
+#ifndef _C_EVENT_%%EVENTC%%_H_
+#define _C_EVENT_%%EVENTC%%_H_
+
+
+/*                                                                   includes
+----------------------------------------------------------------------------- */
+
+#include "precompiled.h"
+
+#include "CEvent.h"
+#include "CGameEngine.h"
+
+
+/*                                                                  constants
+----------------------------------------------------------------------------- */
+
+// ID
+const CEvent::ID  kEvent_%%EVENT%% = nlFOURCODE('%%A%%','%%B%%','%%C%%','%%D%%');
+
+
+/*                                                                    classes
+----------------------------------------------------------------------------- */
+
+/*  _________________________________________________________________________ */
+class CEvent_%%EVENT%% : public CEvent
+/*! @brief 
+*/
+{
+  public:
+    // ct and dt
+     CEvent_%%EVENT%%(void);
+    ~CEvent_%%EVENT%%(void);
+    
+    // handling
+    void Handle(CGameState *data);
+  
+    
+    // properties
+    /* PROPERTY DATA GOES HERE */
+};
+
+
+#endif  /* _C_EVENT_%%EVENTC%%_H_ */

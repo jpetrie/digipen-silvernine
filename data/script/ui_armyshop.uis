@@ -1,0 +1,4 @@
+self:NewButton(0,0,"ui_shop",3,GetEventCode("noop"),"");
+
+self:NewButton(200,30,"ui_shop",2,GetEventCode("armb"),"");
+self:NewButton(15,30,"ui_shop",1,GetEventCode("purc"),"");
